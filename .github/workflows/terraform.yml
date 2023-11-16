@@ -73,15 +73,15 @@ jobs:
       uses: hashicorp/setup-terraform@v1
       with:
         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
-        
+    #first ls
+    - name: first ls
+      run: ls
     # cd into terraform directory
     - name: Terraform cd
       run: cd terraform
-    # second pwd
-    - name: second pwd
-      run: pwd
 
-    - name: ls
+    # second ls
+    - name: secondo ls
       run: ls
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
