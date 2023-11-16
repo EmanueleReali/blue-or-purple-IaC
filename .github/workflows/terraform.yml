@@ -80,7 +80,7 @@ jobs:
     # cd into terraform directory
     - name: Terraform cd
       run: cd terraform
-
+    # second pwd
     - name: second pwd
       run: pwd
 
