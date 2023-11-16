@@ -77,9 +77,7 @@ jobs:
     #first ls
     - name: first ls
       run: ls
-    # cd into terraform directory
-    - name: Terraform cd
-      run: cd terraform
+
 
     # second ls
     - name: secondo ls
