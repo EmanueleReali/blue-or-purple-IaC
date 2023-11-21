@@ -76,7 +76,7 @@ jobs:
         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
     - name: login into azure
-      run: az login --user e.reali@cloudcommandcenter.it --password ROOtsarcane98A
+      run: az login --service-principal -u 52dcfd9b-faf4-4a5b-aaf8-4d5a815a06e4 -p Q4m8Q~JBTWmWBfEB.X_kejLCqPsXIScczBWBAcI~ --tenant ce5c47ef-5061-41b0-b92f-bb2bcbfd6b72
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
